@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container">
+          <a href="../" class="navbar-brand">Weather App <span style="color: rgb(39, 117, 161);"> <strong> - Django
+                Framework</strong>
+            </span> </a>
+            <h3>Sumit Ahire</h3>
+        </div>
+      </div>
+    
+      <br /><br /> <br>
+      <div id="jumbotron" class="jumbotron" style="text-align: center; margin-top:-50px">
+        <h1 class="display-5">Weather Desktop App </h1>
+        <h5>Using Python Language and Django Framework</h5>
+    
+      </div>
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <form method="post" class="col-md"">
+          {% csrf_token %}
+          <div class=" input-group">
+    
+          <input type="text" class="form-control" name="city" placeholder="Choose Your City ...">
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+          </div>
+          <form>
+      </nav>
+      <br> <br>
+    </div>
+  </body>
+</html>
